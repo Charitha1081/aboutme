@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Charitha | About Me</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <nav aria-label="Main navigation">
+            <a class="logo" href="#home">Charitha ✿</a>
+
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero / About Me -->
+        <section class="hero" id="home">
+            <div class="hero-text">
+                <p class="intro">Hello! I'm</p>
+
+                <h1>Charitha</h1>
+
+                <p class="tagline">
+                    Data Science student &amp; future AI/ML Engineer
+                </p>
+
+                <p class="bio" id="about">
+                    I'm from Vijayawada and currently living in Denton, Texas,
+                    where I'm pursuing a Master's in Data Science.
+                    I'm interested in building my career as an AI/ML Engineer.
+                </p>
+
+                <a
+                    class="button"
+                    href="https://www.linkedin.com/in/charithasri-ganga-ande-245847202"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Find me on LinkedIn
+                </a>
+            </div>
+
+            <div class="hero-photo">
+                <img
+                    src="IMG_2233.jpg"
+                    alt="Portrait of Charitha smiling outdoors"
+                >
+            </div>
+        </section>
+
+
+        <!-- Interests and Skills -->
+        <section class="interests" id="interests">
+            <div class="section-heading">
+                <p class="small-heading">A little more about me</p>
+                <h2>Things I Love &amp; Learn</h2>
+            </div>
+
+            <ul class="interest-grid">
+                <li>
+                    <span aria-hidden="true">🐍</span>
+                    <h3>Python</h3>
+                    <p>One of the main tools I use while learning data science.</p>
+                </li>
+
+                <li>
+                    <span aria-hidden="true">🤖</span>
+                    <h3>Machine Learning</h3>
+                    <p>I enjoy learning how computers can find patterns in data.</p>
+                </li>
+
+                <li>
+                    <span aria-hidden="true">✨</span>
+                    <h3>Artificial Intelligence</h3>
+                    <p>AI is the career area I am most excited to explore.</p>
+                </li>
+
+                <li>
+                    <span aria-hidden="true">🍳</span>
+                    <h3>Cooking</h3>
+                    <p>I enjoy spending some of my free time cooking.</p>
+                </li>
+
+                <li>
+                    <span aria-hidden="true">🎨</span>
+                    <h3>Drawing</h3>
+                    <p>Drawing gives me a creative break from technology.</p>
+                </li>
+
+                <li>
+                    <span aria-hidden="true">🏃‍♀️</span>
+                    <h3>Fitness</h3>
+                    <p>I enjoy staying active and making fitness part of my routine.</p>
+                </li>
+
+                <li>
+                    <span aria-hidden="true">✈️</span>
+                    <h3>Travel</h3>
+                    <p>I love visiting new places and experiencing something different.</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <p class="small-heading">Let's connect</p>
+
+            <h2>Find Me Online</h2>
+
+            <p>
+                You can connect with me on LinkedIn to follow my
+                Data Science and AI/ML journey.
+            </p>
+
+            <a
+                class="button"
+                href="https://www.linkedin.com/in/charithasri-ganga-ande-245847202"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Charithasri Ganga Ande on LinkedIn
+            </a>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <p>Made with ♡ by Charitha</p>
+    </footer>
+
+</body>
+</html>

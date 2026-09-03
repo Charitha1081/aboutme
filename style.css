@@ -1,0 +1,360 @@
+/* ------------------------------
+   Basic page styles
+------------------------------ */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #432c4d;
+    background-color: #fff9fc;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+
+/* ------------------------------
+   Header / Navigation
+------------------------------ */
+
+.site-header {
+    background-color: #fff2f8;
+    border-bottom: 1px solid #ecd4e2;
+}
+
+nav {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+    padding: 18px 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    color: #7b3f70;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.nav-links a {
+    color: #5b3a64;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #a33d78;
+    text-decoration: underline;
+}
+
+
+/* ------------------------------
+   Hero / About section
+------------------------------ */
+
+.hero {
+    width: min(1100px, 90%);
+    min-height: 80vh;
+    margin: 0 auto;
+    padding: 70px 0;
+
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.intro {
+    margin-bottom: 0;
+    color: #a33d78;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+h1 {
+    margin: 5px 0 10px;
+    color: #6d3768;
+    font-size: clamp(3rem, 8vw, 5.5rem);
+    line-height: 1;
+}
+
+.tagline {
+    margin-top: 15px;
+    color: #7d456e;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.bio {
+    max-width: 620px;
+    margin: 22px 0 30px;
+    font-size: 1.05rem;
+}
+
+.hero-photo img {
+    width: 100%;
+    max-width: 430px;
+    aspect-ratio: 4 / 5;
+    margin: 0 auto;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 8px solid #ffffff;
+    border-radius: 40px;
+    box-shadow: 0 15px 35px rgba(93, 54, 88, 0.18);
+}
+
+
+/* ------------------------------
+   Buttons
+------------------------------ */
+
+.button {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    color: #ffffff;
+    background-color: #8d4a7f;
+
+    border-radius: 30px;
+
+    font-weight: bold;
+    text-decoration: none;
+
+    transition: background-color 0.2s ease,
+                transform 0.2s ease;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #6f3865;
+    transform: translateY(-2px);
+}
+
+
+/* ------------------------------
+   Interests / Skills section
+------------------------------ */
+
+.interests {
+    padding: 80px 5%;
+    background-color: #f8eefc;
+}
+
+.section-heading {
+    max-width: 1100px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.small-heading {
+    margin-bottom: 6px;
+
+    color: #9a3f76;
+    font-size: 0.95rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-top: 0;
+    color: #63365f;
+    font-size: 2.2rem;
+}
+
+.interest-grid {
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+
+    list-style: none;
+}
+
+.interest-grid li {
+    padding: 28px;
+
+    background-color: #ffffff;
+
+    border: 1px solid #ead5e8;
+    border-radius: 24px;
+
+    box-shadow: 0 8px 22px rgba(104, 65, 100, 0.08);
+}
+
+.interest-grid span {
+    font-size: 2rem;
+}
+
+.interest-grid h3 {
+    margin: 12px 0 5px;
+
+    color: #743c69;
+    font-size: 1.2rem;
+}
+
+.interest-grid p {
+    margin: 0;
+}
+
+
+/* ------------------------------
+   Contact section
+------------------------------ */
+
+.contact {
+    width: min(750px, 90%);
+    margin: 0 auto;
+    padding: 90px 0;
+
+    text-align: center;
+}
+
+.contact p:not(.small-heading) {
+    margin: 0 auto 28px;
+    max-width: 600px;
+}
+
+
+/* ------------------------------
+   Footer
+------------------------------ */
+
+footer {
+    padding: 25px;
+
+    color: #603958;
+    background-color: #f5dce9;
+
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+
+/* ------------------------------
+   Tablet and phone styles
+------------------------------ */
+
+@media (max-width: 800px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 50px 0;
+
+        grid-template-columns: 1fr;
+        gap: 40px;
+
+        text-align: center;
+    }
+
+    .bio {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-photo {
+        order: -1;
+    }
+
+    .hero-photo img {
+        max-width: 320px;
+    }
+
+    .interest-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* ------------------------------
+   Small phone styles
+------------------------------ */
+
+@media (max-width: 520px) {
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero {
+        width: 88%;
+        padding: 40px 0 55px;
+    }
+
+    h1 {
+        font-size: 3.3rem;
+    }
+
+    .tagline {
+        font-size: 1.1rem;
+    }
+
+    .hero-photo img {
+        max-width: 260px;
+        border-radius: 30px;
+    }
+
+    .interests {
+        padding: 60px 6%;
+    }
+
+    .interest-grid {
+        grid-template-columns: 1fr;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .contact {
+        padding: 65px 0;
+    }
+}
